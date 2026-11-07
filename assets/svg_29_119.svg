@@ -1,0 +1,16 @@
+<svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<mask id="mask0_29_119" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="-12" y="-12" width="53" height="53">
+<rect x="-11.6507" y="-11.6506" width="52.3006" height="52.3006" fill="#D9D9D9"/>
+<rect x="-10.1487" y="-10.1487" width="49.2967" height="49.2967" stroke-width="3.00384" stroke="#343434" stroke-opacity="0.2"/>
+</mask>
+<g mask="url(#mask0_29_119)">
+<use xlink:href="#stroke0_29_119" fill="#DEDEDE"/>
+<mask id="stroke1_29_119" fill="white">
+<use xlink:href="#stroke0_29_119"/>
+</mask>
+<path d="M2.29632 28.9996L0 26.7033L12.2035 14.4998L0 2.29632L2.29632 0L14.4998 12.2035L26.7033 0L28.9996 2.29632L16.7961 14.4998L28.9996 26.7033L26.7033 28.9996L14.4998 16.7961L2.29632 28.9996Z" stroke-width="6.00769" stroke="#DEDEDE" mask="url(#stroke1_29_119)"/>
+</g>
+<defs>
+<path id="stroke0_29_119" d="M2.29632 28.9996L0 26.7033L12.2035 14.4998L0 2.29632L2.29632 0L14.4998 12.2035L26.7033 0L28.9996 2.29632L16.7961 14.4998L28.9996 26.7033L26.7033 28.9996L14.4998 16.7961L2.29632 28.9996Z"/>
+</defs>
+</svg>
