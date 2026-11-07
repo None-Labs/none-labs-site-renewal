@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>None Labs — Pure UI Kit (No UX / No JS)</title>
+  <!-- Google Fonts: Ubuntu, Red Hat Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- Pretendard Font -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    * { box-sizing: border-box; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+    body { font-family: 'Pretendard', sans-serif; background-color: #F5F5F5; color: #343434; margin: 0; padding: 0; }
+  </style>
+</head>
+<body class="bg-[#F5F5F5] min-h-screen text-[#343434] p-[40px] flex flex-col gap-[60px] max-w-[1200px] mx-auto">
+
+  <!-- ========================================== -->
+  <!-- NOTICE / METADATA HEADER                   -->
+  <!-- ========================================== -->
+  <section class="border-b border-[#DEDEDE] pb-[24px]">
+    <div class="flex items-center gap-[12px] mb-[8px]">
+      <span class="text-[24px] font-[700] text-[#343434] select-none" style="font-family:'Ubuntu',sans-serif">
+        <span class="font-[700]">[ </span><span class="font-[400]">None Labs</span><span class="font-[700]"> ]</span>
+      </span>
+      <span class="text-[14px] text-[#686868] font-[500]" style="font-family:'Red Hat Display',sans-serif">Convenience in Everyday life</span>
+    </div>
+    <p class="text-[14px] text-[#888888]">
+      UX 및 동적 인터랙션(JS 기능)을 배제하고 Figma 규격을 1:1로 추출한 <strong>순수 UI 블록 컴포넌트 킷</strong>입니다.<br/>
+      추후 Svelte, React 등 프론트엔드 도구에서 비즈니스 로직과 이벤트 핸들러만 바로 결합하여 사용할 수 있습니다.
+    </p>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- UI BLOCK 1: BRAND TOP HEADER (DESKTOP)     -->
+  <!-- Figma Node: 2039:11 / 2039:10              -->
+  <!-- ========================================== -->
+  <section class="flex flex-col gap-[16px]">
+    <div class="flex items-center justify-between">
+      <h2 class="text-[16px] font-[700] text-[#343434]">1. 상단 브랜드 헤더 (Top Brand Bar - Desktop)</h2>
+      <span class="text-[12px] text-[#888888]">w-full max-w-[680px] h-[24px]</span>
+    </div>
+
+    <div class="p-[24px] bg-[#FFFFFF] border border-[#DEDEDE] rounded-[10px]">
+      <!-- PURE UI COMPONENT: Top Brand Bar Desktop -->
+      <header class="w-full flex flex-row items-center justify-between select-none">
+        <div class="flex flex-row items-baseline text-[#343434]" style="font-family:'Ubuntu',sans-serif">
+          <span class="text-[18px] font-[700] leading-none">[ </span>
+          <span class="text-[18px] font-[400] leading-none">None Labs </span>
+          <span class="text-[18px] font-[700] leading-none">]</span>
+        </div>
+        <p class="text-[18px] font-[500] leading-none text-[#686868]" style="font-family:'Red Hat Display',sans-serif">
+          Convenience in Everyday life
+        </p>
+      </header>
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- UI BLOCK 2: BRAND TOP HEADER (MOBILE 300)  -->
+  <!-- Figma Node: 2077:378 / 2081:389 / 2081:390 -->
+  <!-- ========================================== -->
+  <section class="flex flex-col gap-[16px]">
+    <div class="flex items-center justify-between">
+      <h2 class="text-[16px] font-[700] text-[#343434]">2. 상단 브랜드 헤더 (Top Brand Bar - Mobile 300px)</h2>
+      <span class="text-[12px] text-[#888888]">w-[260px] h-[8px]</span>
+    </div>
+
+    <div class="p-[24px] bg-[#FFFFFF] border border-[#DEDEDE] rounded-[10px]">
+      <!-- PURE UI COMPONENT: Top Brand Bar Mobile -->
+      <header class="w-[260px] flex flex-row items-center justify-between select-none">
+        <div class="flex flex-row items-baseline text-[#343434]" style="font-family:'Ubuntu',sans-serif">
+          <span class="text-[6px] font-[700] leading-none">[ </span>
+          <span class="text-[6px] font-[400] leading-none">None Labs </span>
+          <span class="text-[6px] font-[700] leading-none">]</span>
+        </div>
+        <p class="text-[6px] font-[500] leading-none text-[#686868]" style="font-family:'Red Hat Display',sans-serif">
+          Convenience in Everyday life
+        </p>
+      </header>
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- UI BLOCK 3: USER GREETING & TITLE BLOCK    -->
+  <!-- Figma Node: 2039:55 / 2039:52 / 2058:91    -->
+  <!-- ========================================== -->
+  <section class="flex flex-col gap-[16px]">
+    <div class="flex items-center justify-between">
+      <h2 class="text-[16px] font-[700] text-[#343434]">3. 타이틀 & 인사말 블록 (Greeting Title)</h2>
+      <span class="text-[12px] text-[#888888]">text-[32px] leading-[38px] Pretendard</span>
+    </div>
+
+    <div class="p-[24px] bg-[#FFFFFF] border border-[#DEDEDE] rounded-[10px]">
+      <!-- PURE UI COMPONENT: Greeting Title -->
+      <div class="flex flex-col gap-[4px] select-none text-[#343434]" style="font-family:'Pretendard',sans-serif">
+        <h1 class="text-[32px] font-[400] leading-[38.19px]">안녕하세요, 회원 님</h1>
+        <p class="text-[32px] font-[400] leading-[38.19px]">요청하신 인증번호가 도착하였습니다</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- UI BLOCK 4: AUTH KEY BOX (인증코드 카드)     -->
+  <!-- Figma Node: 2056:9 / 2077:377              -->
+  <!-- ========================================== -->
+  <section class="flex flex-col gap-[16px]">
+    <div class="flex items-center justify-between">
+      <h2 class="text-[16px] font-[700] text-[#343434]">4. 인증코드 디스플레이 카드 (Auth Key Box)</h2>
+      <span class="text-[12px] text-[#888888]">Desktop (395 × 80 px) & Mobile (260 × 60 px)</span>
+    </div>
+
+    <div class="p-[24px] bg-[#FFFFFF] border border-[#DEDEDE] rounded-[10px] flex flex-col md:flex-row gap-[24px] items-start">
+      <!-- Desktop Auth Key Box -->
+      <div class="w-[395px] h-[80px] flex items-center justify-center rounded-[10px] bg-[#FFFFFF] border border-[#686868] select-none">
+        <span class="text-[32px] font-[700] leading-none tracking-[12.8px] text-[#343434]" style="font-family:'Red Hat Display',sans-serif">
+          28169
+        </span>
+      </div>
+
+      <!-- Mobile Auth Key Box (300px scale) -->
+      <div class="w-[260px] h-[60px] flex items-center justify-center rounded-[8px] bg-[#FFFFFF] border border-[#686868] select-none">
+        <span class="text-[24px] font-[700] leading-none tracking-[8px] text-[#343434]" style="font-family:'Red Hat Display',sans-serif">
+          28169
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- UI BLOCK 5: NOTIFICATION CARD (공지사항 카드) -->
+  <!-- Figma Node: 2039:56 / 2029:5               -->
+  <!-- ========================================== -->
+  <section class="flex flex-col gap-[16px]">
+    <div class="flex items-center justify-between">
+      <h2 class="text-[16px] font-[700] text-[#343434]">5. 공지사항 콘텐츠 카드 (Notification Card)</h2>
+      <span class="text-[12px] text-[#888888]">w-full max-w-[676px] rounded-[10px] border border-[#686868]</span>
+    </div>
+
+    <div class="p-[24px] bg-[#F5F5F5] border border-[#DEDEDE] rounded-[10px]">
+      <!-- PURE UI COMPONENT: Notification Card -->
+      <article class="w-full max-w-[676px] flex flex-col gap-[30px] p-[30px] rounded-[10px] bg-[#FFFFFF] border border-[#686868] select-none" style="font-family:'Pretendard',sans-serif">
+        <h3 class="text-[24px] font-[700] leading-[28.64px] text-[#343434]">
+          [공지] 림미르르의 훈화말씀
+        </h3>
+        <p class="text-[22px] font-[400] leading-[40px] text-[#343434] whitespace-pre-wrap break-words">
+두마에 아딩엉나 지미삭히잉의, 나나저푼푀느이는 흉므에 폄주가 살단 믠녁이님이 의있 이초봅자찬더를. 산울도 안그므시젠뎐도 맘레는 긍딚아 깁트 야마터다 아자엠시나 뎔세를. 암끼과말항에 다입제잦드는 의놔를, 콰수스 샌이다처럼 겨도아다 깅긴끼 셔성온습니다 하더번너 음사즈와 오고수롬을.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- UI BLOCK 6: NEWSLETTER FEED ITEM (뉴스 피드) -->
+  <!-- Figma Node: 2058:95 / 2081:409             -->
+  <!-- ========================================== -->
+  <section class="flex flex-col gap-[16px]">
+    <div class="flex items-center justify-between">
+      <h2 class="text-[16px] font-[700] text-[#343434]">6. 뉴스레터 피드/질문 카드 (Newsletter Feed Card)</h2>
+      <span class="text-[12px] text-[#888888]">w-full max-w-[680px] h-[170px] border border-[#888888]</span>
+    </div>
+
+    <div class="p-[24px] bg-[#F5F5F5] border border-[#DEDEDE] rounded-[10px]">
+      <!-- PURE UI COMPONENT: Newsletter Feed Card -->
+      <article class="relative w-full max-w-[680px] h-[170px] rounded-[10px] bg-[#FFFFFF] border border-[#888888] p-[25px] flex flex-col justify-between select-none">
+        <div class="flex flex-col gap-[10px]">
+          <!-- Card Title Header -->
+          <div class="flex items-center gap-[8px]">
+            <span class="text-[24px] font-[600] text-[#343434]" style="font-family:'Red Hat Display',sans-serif">Q.</span>
+            <h4 class="text-[24px] font-[700] text-[#343434]" style="font-family:'Pretendard',sans-serif">림미르 폼 미쳤다</h4>
+          </div>
+          <!-- Card Subtitle -->
+          <p class="text-[20px] font-[400] text-[#343434] pl-[32px]" style="font-family:'Pretendard',sans-serif">
+            이거 보여줄려고 어그로 끌었다.
+          </p>
+        </div>
+
+        <!-- Card Bottom Reaction Counters -->
+        <div class="self-end flex items-center gap-[24px] text-[18px] text-[#343434]" style="font-family:'Pretendard',sans-serif">
+          <!-- Comments -->
+          <div class="flex items-center gap-[6px]">
+            <svg class="w-[20px] h-[20px] fill-current text-[#343434]" viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 9h12v2H6V9zm8 5H6v-2h8v2zm4-6H6V6h12v2z"/></svg>
+            <span>10</span>
+          </div>
+          <!-- Likes -->
+          <div class="flex items-center gap-[6px]">
+            <svg class="w-[20px] h-[20px] fill-current text-[#343434]" viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>
+            <span>99+</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- UI BLOCK 7: LOWER SLOGAN / BRAND FOOTER    -->
+  <!-- Figma Node: 2056:10 / 2056:11 / 2058:184   -->
+  <!-- ========================================== -->
+  <section class="flex flex-col gap-[16px]">
+    <div class="flex items-center justify-between">
+      <h2 class="text-[16px] font-[700] text-[#343434]">7. 하단 브랜드 푸터 (Lower Brand Footer)</h2>
+      <span class="text-[12px] text-[#888888]">bg-[#DEDEDE] pl-[40px] pr-[40px] py-[67px]</span>
+    </div>
+
+    <div class="p-[24px] bg-[#FFFFFF] border border-[#DEDEDE] rounded-[10px]">
+      <!-- PURE UI COMPONENT: Lower Brand Footer -->
+      <footer class="w-full max-w-[800px] flex flex-col gap-[10px] px-[40px] py-[60px] bg-[#DEDEDE] select-none">
+        <div class="flex flex-row items-baseline text-[#343434]" style="font-family:'Ubuntu',sans-serif">
+          <span class="text-[16px] font-[700] leading-none">[ </span>
+          <span class="text-[16px] font-[400] leading-none">None Labs </span>
+          <span class="text-[16px] font-[700] leading-none">]</span>
+        </div>
+        <p class="text-[12px] font-[500] leading-none text-[#686868]" style="font-family:'Red Hat Display',sans-serif">
+          Convenience in Everyday life
+        </p>
+      </footer>
+    </div>
+  </section>
+
+</body>
+</html>

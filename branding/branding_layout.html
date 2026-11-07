@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>None Labs — Branding Layout & Design System</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Red+Hat+Display:wght@300;400;500;600;700;800&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'none-accent': '#343434',
+            'none-secondary': '#686868',
+            'none-muted': '#888888',
+            'none-border': '#DEDEDE',
+            'none-bg': '#F5F5F5',
+            'none-surface': '#FFFFFF',
+          },
+          fontFamily: {
+            logo: ['Ubuntu', 'sans-serif'],
+            display: ['"Red Hat Display"', 'sans-serif'],
+            sans: ['Pretendard', '-apple-system', 'BlinkMacSystemFont', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    * { box-sizing: border-box; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+    body { font-family: 'Pretendard', sans-serif; background-color: #F5F5F5; color: #343434; margin: 0; padding: 0; }
+    .brand-bracket { font-family: 'Ubuntu', sans-serif; font-weight: 700; color: #343434; }
+    .brand-title { font-family: 'Ubuntu', sans-serif; font-weight: 400; color: #343434; }
+    .brand-slogan { font-family: 'Red Hat Display', sans-serif; font-weight: 500; color: #686868; }
+  </style>
+</head>
+<body class="bg-[#F5F5F5] min-h-screen text-[#343434] flex flex-col">
+
+  <!-- TOP HEADER / NAV BAR -->
+  <header class="w-full bg-[#FFFFFF] border-b border-[#DEDEDE] sticky top-0 z-50 px-[40px] py-[18px] flex items-center justify-between shadow-sm">
+    <div class="flex items-center gap-[24px]">
+      <a href="index.html" class="flex items-center gap-[6px] select-none text-[22px] leading-none">
+        <span class="brand-bracket">[</span>
+        <span class="brand-title">None Labs</span>
+        <span class="brand-bracket">]</span>
+      </a>
+      <span class="h-[18px] w-[1px] bg-[#DEDEDE] hidden md:block"></span>
+      <p class="brand-slogan text-[14px] leading-none hidden md:block select-none">Convenience in Everyday life</p>
+    </div>
+
+    <!-- Navigation Tabs -->
+    <nav class="flex items-center gap-[8px] text-[14px] font-[500]">
+      <button onclick="switchTab('design-system')" id="tab-btn-design-system" class="px-[14px] py-[8px] rounded-[8px] bg-[#343434] text-[#F5F5F5] transition-all">브랜드 시스템</button>
+      <button onclick="switchTab('frames')" id="tab-btn-frames" class="px-[14px] py-[8px] rounded-[8px] text-[#686868] hover:bg-[#DEDEDE] hover:text-[#343434] transition-all">프레임 목록</button>
+      <button onclick="switchTab('blocks')" id="tab-btn-blocks" class="px-[14px] py-[8px] rounded-[8px] text-[#686868] hover:bg-[#DEDEDE] hover:text-[#343434] transition-all">블록 컴포넌트</button>
+      <a href="index.html" target="_blank" class="ml-[8px] px-[14px] py-[8px] rounded-[8px] border border-[#343434] text-[#343434] hover:bg-[#343434] hover:text-[#FFFFFF] transition-all flex items-center gap-[6px]">
+        <span>피그마 1:1 캔버스</span>
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+      </a>
+    </nav>
+  </header>
+
+  <!-- MAIN WRAPPER -->
+  <main class="flex-1 max-w-[1400px] w-full mx-auto px-[24px] py-[40px] flex flex-col gap-[40px]">
+
+    <!-- TAB 1: BRAND DESIGN SYSTEM -->
+    <section id="view-design-system" class="flex flex-col gap-[36px]">
+      <!-- Brand Hero Banner -->
+      <div class="w-full bg-[#FFFFFF] border border-[#DEDEDE] rounded-[16px] p-[48px] flex flex-col md:flex-row items-center justify-between gap-[32px] shadow-sm">
+        <div class="flex flex-col gap-[16px]">
+          <div class="flex items-center gap-[10px]">
+            <span class="px-[10px] py-[4px] rounded-[6px] bg-[#343434] text-[#F5F5F5] text-[12px] font-[600] tracking-wide">BRANDING GUIDE</span>
+            <span class="text-[#888888] text-[13px]">Figma Node ID 0:1</span>
+          </div>
+          <h1 class="text-[44px] font-[700] text-[#343434] leading-[1.2]">
+            <span class="font-logo font-[700]">[ </span><span class="font-logo font-[400]">None Labs</span><span class="font-logo font-[700]"> ]</span>
+          </h1>
+          <p class="font-display text-[24px] text-[#686868] font-[500]">Convenience in Everyday life</p>
+          <p class="text-[15px] text-[#888888] max-w-[580px] leading-[1.6]">
+            None Labs의 모든 디지털 인터페이스와 문서는 군더더기 없는 미니멀리즘과 직관적인 블록 아키텍처를 바탕으로 설계되었습니다.
+          </p>
+        </div>
+
+        <!-- Brand Quick Card -->
+        <div class="bg-[#F5F5F5] border border-[#DEDEDE] rounded-[12px] p-[24px] flex flex-col gap-[16px] min-w-[300px]">
+          <span class="text-[13px] font-[700] text-[#343434] tracking-wide">핵심 브랜드 가치</span>
+          <div class="flex flex-col gap-[10px] text-[14px]">
+            <div class="flex items-center justify-between">
+              <span class="text-[#686868]">브랜드 명</span>
+              <span class="font-[600] text-[#343434]">[ None Labs ]</span>
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="text-[#686868]">공식 슬로건</span>
+              <span class="font-display font-[500] text-[#343434]">Convenience in Everyday life</span>
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="text-[#686868]">대표 서체</span>
+              <span class="font-[600] text-[#343434]">Ubuntu / Red Hat Display / Pretendard</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Color Palette (From Frame 3: 9:30) -->
+      <div class="w-full bg-[#FFFFFF] border border-[#DEDEDE] rounded-[16px] p-[36px] flex flex-col gap-[24px] shadow-sm">
+        <div class="flex items-center justify-between">
+          <h2 class="text-[22px] font-[700] text-[#343434]">Color Palette (색상 시스템)</h2>
+          <span class="text-[13px] text-[#888888]">Frame 3 (9:30) 기준</span>
+        </div>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-[20px]">
+          <!-- Color 1: Accent #343434 -->
+          <div class="flex flex-col items-center gap-[12px] p-[16px] rounded-[12px] bg-[#F5F5F5] border border-[#DEDEDE]">
+            <div class="w-[80px] h-[80px] rounded-full bg-[#343434] shadow-inner"></div>
+            <div class="text-center">
+              <p class="text-[13px] text-[#686868] font-[500]">Accent</p>
+              <p class="text-[16px] font-[700] text-[#343434]">#343434</p>
+            </div>
+          </div>
+          <!-- Color 2: Secondary #686868 -->
+          <div class="flex flex-col items-center gap-[12px] p-[16px] rounded-[12px] bg-[#F5F5F5] border border-[#DEDEDE]">
+            <div class="w-[80px] h-[80px] rounded-full bg-[#686868] shadow-inner"></div>
+            <div class="text-center">
+              <p class="text-[13px] text-[#686868] font-[500]">Secondary</p>
+              <p class="text-[16px] font-[700] text-[#343434]">#686868</p>
+            </div>
+          </div>
+          <!-- Color 3: Logo Accent #888888 -->
+          <div class="flex flex-col items-center gap-[12px] p-[16px] rounded-[12px] bg-[#F5F5F5] border border-[#DEDEDE]">
+            <div class="w-[80px] h-[80px] rounded-full bg-[#888888] shadow-inner"></div>
+            <div class="text-center">
+              <p class="text-[13px] text-[#686868] font-[500]">Logo Accent</p>
+              <p class="text-[16px] font-[700] text-[#343434]">#888888</p>
+            </div>
+          </div>
+          <!-- Color 4: Logo Secondary #DEDEDE -->
+          <div class="flex flex-col items-center gap-[12px] p-[16px] rounded-[12px] bg-[#F5F5F5] border border-[#DEDEDE]">
+            <div class="w-[80px] h-[80px] rounded-full bg-[#DEDEDE] shadow-inner"></div>
+            <div class="text-center">
+              <p class="text-[13px] text-[#686868] font-[500]">Logo Secondary</p>
+              <p class="text-[16px] font-[700] text-[#343434]">#DEDEDE</p>
+            </div>
+          </div>
+          <!-- Color 5: Background #F5F5F5 -->
+          <div class="flex flex-col items-center gap-[12px] p-[16px] rounded-[12px] bg-[#F5F5F5] border border-[#DEDEDE]">
+            <div class="w-[80px] h-[80px] rounded-full bg-[#F5F5F5] border-2 border-[#888888]"></div>
+            <div class="text-center">
+              <p class="text-[13px] text-[#686868] font-[500]">Background</p>
+              <p class="text-[16px] font-[700] text-[#343434]">#F5F5F5</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Typography System -->
+      <div class="w-full bg-[#FFFFFF] border border-[#DEDEDE] rounded-[16px] p-[36px] flex flex-col gap-[24px] shadow-sm">
+        <h2 class="text-[22px] font-[700] text-[#343434]">Typography (타이포그래피 규격)</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-[24px]">
+          <!-- Ubuntu -->
+          <div class="p-[24px] rounded-[12px] bg-[#F5F5F5] border border-[#DEDEDE] flex flex-col gap-[12px]">
+            <span class="text-[12px] font-[700] text-[#888888]">BRAND LOGO & IDENTITY</span>
+            <p class="font-logo text-[28px] font-[700] text-[#343434]">[ Ubuntu ]</p>
+            <p class="text-[14px] text-[#686868] leading-[1.6]">로고 괄호([ ])와 영문 브랜드 표기에 활용되며, 견고하고 구조적인 인상을 제공합니다.</p>
+          </div>
+          <!-- Red Hat Display -->
+          <div class="p-[24px] rounded-[12px] bg-[#F5F5F5] border border-[#DEDEDE] flex flex-col gap-[12px]">
+            <span class="text-[12px] font-[700] text-[#888888]">SLOGAN & DISPLAY HEADINGS</span>
+            <p class="font-display text-[26px] font-[500] text-[#343434]">Red Hat Display</p>
+            <p class="text-[14px] text-[#686868] leading-[1.6]">공식 슬로건 "Convenience in Everyday life", 인증코드 숫자, 영문 타이틀에 적용됩니다.</p>
+          </div>
+          <!-- Pretendard -->
+          <div class="p-[24px] rounded-[12px] bg-[#F5F5F5] border border-[#DEDEDE] flex flex-col gap-[12px]">
+            <span class="text-[12px] font-[700] text-[#888888]">BODY & KOREAN TEXT</span>
+            <p class="text-[26px] font-[700] text-[#343434]">Pretendard</p>
+            <p class="text-[14px] text-[#686868] leading-[1.6]">모든 한글 텍스트, 이메일 본문, 공지사항, 소식지 기사 등 UI 전반에 높은 가독성을 부여합니다.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 2: FIGMA FRAMES PREVIEW -->
+    <section id="view-frames" class="hidden flex-col gap-[36px]">
+      <div class="flex items-center justify-between">
+        <div>
+          <h2 class="text-[24px] font-[700] text-[#343434]">Figma Frames (프레임별 1:1 HTML)</h2>
+          <p class="text-[14px] text-[#686868]">피그마 원본 디자인에서 추출된 독립 프레임 목록입니다.</p>
+        </div>
+      </div>
+
+      <!-- Category: Presentations & Slides -->
+      <div class="flex flex-col gap-[16px]">
+        <h3 class="text-[18px] font-[700] text-[#343434] border-l-4 border-[#343434] pl-[12px]">프레젠테이션 & 브랜딩 슬라이드</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[20px]">
+          <div class="bg-[#FFFFFF] border border-[#DEDEDE] rounded-[12px] p-[20px] flex flex-col justify-between gap-[16px] shadow-sm hover:border-[#343434] transition-all">
+            <div>
+              <div class="flex items-center justify-between mb-[8px]">
+                <span class="text-[12px] font-[600] px-[8px] py-[2px] bg-[#DEDEDE] rounded text-[#343434]">1700 × 1100</span>
+                <span class="text-[12px] text-[#888888]">1:2</span>
+              </div>
+              <h4 class="text-[16px] font-[700] text-[#343434]">Frame 1</h4>
+              <p class="text-[13px] text-[#686868] mt-[4px]">히어로 스플래시: [ None Labs ] 로고 및 슬로건</p>
+            </div>
+            <a href="frames/Frame-1_1_2.html" target="_blank" class="w-full text-center py-[8px] rounded-[6px] bg-[#F5F5F5] hover:bg-[#343434] hover:text-[#FFFFFF] text-[13px] font-[600] transition-all">프레임 열기 &rarr;</a>
+          </div>
+
+          <div class="bg-[#FFFFFF] border border-[#DEDEDE] rounded-[12px] p-[20px] flex flex-col justify-between gap-[16px] shadow-sm hover:border-[#343434] transition-all">
+            <div>
+              <div class="flex items-center justify-between mb-[8px]">
+                <span class="text-[12px] font-[600] px-[8px] py-[2px] bg-[#DEDEDE] rounded text-[#343434]">1920 × 1080</span>
+                <span class="text-[12px] text-[#888888]">9:2</span>
+              </div>
+              <h4 class="text-[16px] font-[700] text-[#343434]">Frame 2</h4>
+              <p class="text-[13px] text-[#686868] mt-[4px]">브랜딩 커버: Branding for None Labs 발표 표지</p>
+            </div>
+            <a href="frames/Frame-2_9_2.html" target="_blank" class="w-full text-center py-[8px] rounded-[6px] bg-[#F5F5F5] hover:bg-[#343434] hover:text-[#FFFFFF] text-[13px] font-[600] transition-all">프레임 열기 &rarr;</a>
+          </div>
+
+          <div class="bg-[#FFFFFF] border border-[#DEDEDE] rounded-[12px] p-[20px] flex flex-col justify-between gap-[16px] shadow-sm hover:border-[#343434] transition-all">
+            <div>
+              <div class="flex items-center justify-between mb-[8px]">
+                <span class="text-[12px] font-[600] px-[8px] py-[2px] bg-[#DEDEDE] rounded text-[#343434]">1920 × 1080</span>
+                <span class="text-[12px] text-[#888888]">9:30</span>
+              </div>
+              <h4 class="text-[16px] font-[700] text-[#343434]">Frame 3</h4>
+              <p class="text-[13px] text-[#686868] mt-[4px]">디자인 가이드라인: Color Palette & Typography 규격</p>
+            </div>
+            <a href="frames/Frame-3_9_30.html" target="_blank" class="w-full text-center py-[8px] rounded-[6px] bg-[#F5F5F5] hover:bg-[#343434] hover:text-[#FFFFFF] text-[13px] font-[600] transition-all">프레임 열기 &rarr;</a>
+          </div>
+
+          <div class="bg-[#FFFFFF] border border-[#DEDEDE] rounded-[12px] p-[20px] flex flex-col justify-between gap-[16px] shadow-sm hover:border-[#343434] transition-all">
+            <div>
+              <div class="flex items-center justify-between mb-[8px]">
+                <span class="text-[12px] font-[600] px-[8px] py-[2px] bg-[#DEDEDE] rounded text-[#343434]">1920 × 1080</span>
+                <span class="text-[12px] text-[#888888]">9:48</span>
+              </div>
+              <h4 class="text-[16px] font-[700] text-[#343434]">Frame 4</h4>
+              <p class="text-[13px] text-[#686868] mt-[4px]">슬라이드 레이아웃: 발표용자료 제목 템플릿</p>
+            </div>
+            <a href="frames/Frame-4_9_48.html" target="_blank" class="w-full text-center py-[8px] rounded-[6px] bg-[#F5F5F5] hover:bg-[#343434] hover:text-[#FFFFFF] text-[13px] font-[600] transition-all">프레임 열기 &rarr;</a>
+          </div>
+
+          <div class="bg-[#FFFFFF] border border-[#DEDEDE] rounded-[12px] p-[20px] flex flex-col justify-between gap-[16px] shadow-sm hover:border-[#343434] transition-all">
+            <div>
+              <div class="flex items-center justify-between mb-[8px]">
+                <span class="text-[12px] font-[600] px-[8px] py-[2px] bg-[#DEDEDE] rounded text-[#343434]">1920 × 1080</span>
+                <span class="text-[12px] text-[#888888]">73:2</span>
+              </div>
+              <h4 class="text-[16px] font-[700] text-[#343434]">Frame 5</h4>
+              <p class="text-[13px] text-[#686868] mt-[4px]">브랜드 슬라이드: Convenience in Everyday life</p>
+            </div>
+            <a href="frames/Frame-5_73_2.html" target="_blank" class="w-full text-center py-[8px] rounded-[6px] bg-[#F5F5F5] hover:bg-[#343434] hover:text-[#FFFFFF] text-[13px] font-[600] transition-all">프레임 열기 &rarr;</a>
+          </div>
+
+          <div class="bg-[#FFFFFF] border border-[#DEDEDE] rounded-[12px] p-[20px] flex flex-col justify-between gap-[16px] shadow-sm hover:border-[#343434] transition-all">
+            <div>
+              <div class="flex items-center justify-between mb-[8px]">
+                <span class="text-[12px] font-[600] px-[8px] py-[2px] bg-[#DEDEDE] rounded text-[#343434]">595 × 842</span>
+                <span class="text-[12px] text-[#888888]">48:16</span>
+              </div>
+              <h4 class="text-[16px] font-[700] text-[#343434]">A4 Document</h4>
+              <p class="text-[13px] text-[#686868] mt-[4px]">문서/레터헤드: None Campus / 농심국제관 양식</p>
+            </div>
+            <a href="frames/A4---1_48_16.html" target="_blank" class="w-full text-center py-[8px] rounded-[6px] bg-[#F5F5F5] hover:bg-[#343434] hover:text-[#FFFFFF] text-[13px] font-[600] transition-all">프레임 열기 &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Category: Email & Messaging (Desktop & Mobile 300px) -->
+      <div class="flex flex-col gap-[16px]">
+        <h3 class="text-[18px] font-[700] text-[#343434] border-l-4 border-[#343434] pl-[12px]">이메일 & 알림 템플릿 (Desktop / Mobile 300)</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[20px]">
+          <!-- Authenticate -->
+          <div class="bg-[#FFFFFF] border border-[#DEDEDE] rounded-[12px] p-[20px] flex flex-col justify-between gap-[16px] shadow-sm">
+            <div>
+              <div class="flex items-center justify-between mb-[8px]">
+                <span class="text-[12px] font-[600] px-[8px] py-[2px] bg-[#DEDEDE] rounded text-[#343434]">인증번호 메일</span>
+                <span class="text-[12px] text-[#888888]">2027:2 / 2027:55</span>
+              </div>
+              <h4 class="text-[16px] font-[700] text-[#343434]">Authenticate (인증)</h4>
+              <p class="text-[13px] text-[#686868] mt-[4px]">회원가입/로그인용 인증번호(5자리) 발송 템플릿</p>
+            </div>
+            <div class="flex gap-[8px]">
+              <a href="frames/Authenticate_2027_2.html" target="_blank" class="flex-1 text-center py-[8px] rounded-[6px] bg-[#F5F5F5] hover:bg-[#343434] hover:text-[#FFFFFF] text-[12px] font-[600] transition-all">PC (600px)</a>
+              <a href="frames/Authenticate-300_2027_55.html" target="_blank" class="flex-1 text-center py-[8px] rounded-[6px] bg-[#F5F5F5] hover:bg-[#343434] hover:text-[#FFFFFF] text-[12px] font-[600] transition-all">Mobile (300px)</a>
+            </div>
+          </div>
+
+          <!-- Notification -->
+          <div class="bg-[#FFFFFF] border border-[#DEDEDE] rounded-[12px] p-[20px] flex flex-col justify-between gap-[16px] shadow-sm">
+            <div>
+              <div class="flex items-center justify-between mb-[8px]">
+                <span class="text-[12px] font-[600] px-[8px] py-[2px] bg-[#DEDEDE] rounded text-[#343434]">공지사항 알림</span>
+                <span class="text-[12px] text-[#888888]">2027:16 / 2027:111</span>
+              </div>
+              <h4 class="text-[16px] font-[700] text-[#343434]">Notification (공지)</h4>
+              <p class="text-[13px] text-[#686868] mt-[4px]">사용자 공지 및 훈화말씀 알림 카드 템플릿</p>
+            </div>
+            <div class="flex gap-[8px]">
+              <a href="frames/Notification_2027_16.html" target="_blank" class="flex-1 text-center py-[8px] rounded-[6px] bg-[#F5F5F5] hover:bg-[#343434] hover:text-[#FFFFFF] text-[12px] font-[600] transition-all">PC (800px)</a>
+              <a href="frames/Notification-300_2027_111.html" target="_blank" class="flex-1 text-center py-[8px] rounded-[6px] bg-[#F5F5F5] hover:bg-[#343434] hover:text-[#FFFFFF] text-[12px] font-[600] transition-all">Mobile (300px)</a>
+            </div>
+          </div>
+
+          <!-- Newsletter -->
+          <div class="bg-[#FFFFFF] border border-[#DEDEDE] rounded-[12px] p-[20px] flex flex-col justify-between gap-[16px] shadow-sm">
+            <div>
+              <div class="flex items-center justify-between mb-[8px]">
+                <span class="text-[12px] font-[600] px-[8px] py-[2px] bg-[#DEDEDE] rounded text-[#343434]">뉴스레터 소식지</span>
+                <span class="text-[12px] text-[#888888]">2058:87 / 2027:129</span>
+              </div>
+              <h4 class="text-[16px] font-[700] text-[#343434]">Newsletter (소식지)</h4>
+              <p class="text-[13px] text-[#686868] mt-[4px]">소식지 기사, Q&A, 좋아요 및 댓글 카운터 카드</p>
+            </div>
+            <div class="flex gap-[8px]">
+              <a href="frames/Newsletter_2058_87.html" target="_blank" class="flex-1 text-center py-[8px] rounded-[6px] bg-[#F5F5F5] hover:bg-[#343434] hover:text-[#FFFFFF] text-[12px] font-[600] transition-all">PC (800px)</a>
+              <a href="frames/Newsletter-300_2027_129.html" target="_blank" class="flex-1 text-center py-[8px] rounded-[6px] bg-[#F5F5F5] hover:bg-[#343434] hover:text-[#FFFFFF] text-[12px] font-[600] transition-all">Mobile (300px)</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 3: MODULAR BLOCKS -->
+    <section id="view-blocks" class="hidden flex-col gap-[36px]">
+      <div class="flex items-center justify-between">
+        <div>
+          <h2 class="text-[24px] font-[700] text-[#343434]">Modular Blocks (컴포넌트 블록 단위 관리)</h2>
+          <p class="text-[14px] text-[#686868]">Svelte, React 등 프론트엔드 컴포넌트로 즉시 이식 가능한 70+ 독립 블록들입니다.</p>
+        </div>
+        <span class="text-[13px] font-[600] bg-[#343434] text-[#FFFFFF] px-[12px] py-[4px] rounded-full">71 Blocks Extracted</span>
+      </div>
+
+      <div class="w-full bg-[#FFFFFF] border border-[#DEDEDE] rounded-[16px] p-[28px] overflow-x-auto shadow-sm">
+        <table class="w-full text-left text-[14px]">
+          <thead>
+            <tr class="border-b border-[#DEDEDE] text-[#686868] font-[600]">
+              <th class="pb-[12px]">블록명 (Block Name)</th>
+              <th class="pb-[12px]">소속 프레임</th>
+              <th class="pb-[12px]">규격 (W × H)</th>
+              <th class="pb-[12px]">Figma Node</th>
+              <th class="pb-[12px] text-right">HTML 파일</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-[#F5F5F5] text-[#343434]">
+            <tr>
+              <td class="py-[10px] font-[600]">[ None Labs ]</td>
+              <td class="py-[10px] text-[#686868]">Frame 1</td>
+              <td class="py-[10px]">598 × 115 px</td>
+              <td class="py-[10px] text-[#888888]">1:4</td>
+              <td class="py-[10px] text-right"><a href="blocks/Frame-1_-None-Labs_1_4.html" target="_blank" class="text-[#343434] underline hover:font-[700]">코드 보기</a></td>
+            </tr>
+            <tr>
+              <td class="py-[10px] font-[600]">Convenience in Everyday life</td>
+              <td class="py-[10px] text-[#686868]">Frame 1</td>
+              <td class="py-[10px]">759 × 79 px</td>
+              <td class="py-[10px] text-[#888888]">2:4</td>
+              <td class="py-[10px] text-right"><a href="blocks/Frame-1_Convenience-in-Everyday-life_2_4.html" target="_blank" class="text-[#343434] underline hover:font-[700]">코드 보기</a></td>
+            </tr>
+            <tr>
+              <td class="py-[10px] font-[600]">top_slogan</td>
+              <td class="py-[10px] text-[#686868]">Authenticate</td>
+              <td class="py-[10px]">480 × 24 px</td>
+              <td class="py-[10px] text-[#888888]">2039:11</td>
+              <td class="py-[10px] text-right"><a href="blocks/Authenticate_top_slogan_2039_11.html" target="_blank" class="text-[#343434] underline hover:font-[700]">코드 보기</a></td>
+            </tr>
+            <tr>
+              <td class="py-[10px] font-[600]">Auth_key (인증코드 카드)</td>
+              <td class="py-[10px] text-[#686868]">Authenticate</td>
+              <td class="py-[10px]">395 × 80 px</td>
+              <td class="py-[10px] text-[#888888]">2056:9</td>
+              <td class="py-[10px] text-right"><a href="blocks/Authenticate_Auth_key_2056_9.html" target="_blank" class="text-[#343434] underline hover:font-[700]">코드 보기</a></td>
+            </tr>
+            <tr>
+              <td class="py-[10px] font-[600]">info (공지 카드)</td>
+              <td class="py-[10px] text-[#686868]">Notification</td>
+              <td class="py-[10px]">676 × 480 px</td>
+              <td class="py-[10px] text-[#888888]">2039:56</td>
+              <td class="py-[10px] text-right"><a href="blocks/Notification_info_2039_56.html" target="_blank" class="text-[#343434] underline hover:font-[700]">코드 보기</a></td>
+            </tr>
+            <tr>
+              <td class="py-[10px] font-[600]">news (소식지 카드 세트)</td>
+              <td class="py-[10px] text-[#686868]">Newsletter</td>
+              <td class="py-[10px]">680 × 890 px</td>
+              <td class="py-[10px] text-[#888888]">2058:94</td>
+              <td class="py-[10px] text-right"><a href="blocks/Newsletter_news_2058_94.html" target="_blank" class="text-[#343434] underline hover:font-[700]">코드 보기</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="w-full bg-[#DEDEDE] mt-auto py-[32px] px-[40px] flex flex-col md:flex-row items-center justify-between gap-[16px] text-[#686868] text-[13px]">
+    <div class="flex items-center gap-[12px]">
+      <span class="font-logo font-[700] text-[#343434]">[ None Labs ]</span>
+      <span class="font-display font-[500]">Convenience in Everyday life</span>
+    </div>
+    <div class="flex items-center gap-[20px]">
+      <span>Project Owner: limmireu1214@gmail.com</span>
+      <span>•</span>
+      <span>Figma 1:1 Block Pipeline</span>
+    </div>
+  </footer>
+
+  <script>
+    function switchTab(tabId) {
+      const tabs = ['design-system', 'frames', 'blocks'];
+      tabs.forEach(t => {
+        const view = document.getElementById('view-' + t);
+        const btn = document.getElementById('tab-btn-' + t);
+        if (t === tabId) {
+          view.classList.remove('hidden');
+          view.classList.add('flex');
+          btn.className = 'px-[14px] py-[8px] rounded-[8px] bg-[#343434] text-[#F5F5F5] transition-all';
+        } else {
+          view.classList.remove('flex');
+          view.classList.add('hidden');
+          btn.className = 'px-[14px] py-[8px] rounded-[8px] text-[#686868] hover:bg-[#DEDEDE] hover:text-[#343434] transition-all';
+        }
+      });
+    }
+  </script>
+</body>
+</html>
