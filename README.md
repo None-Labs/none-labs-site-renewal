@@ -29,7 +29,7 @@
 | :--- | :--- | :--- | :--- | :--- |
 | **Main Renewed** | `184:6` | 1920 × 1370 | 상단 네비게이션, `</>` 듀얼 톤 히어로, 브랜드 슬로건, 공식 사업자 푸터 | [`main_renewed.html`](file:///home/limmireu1214/_projects/_EXPORT_HTML/None-Labs-site-Renewal/main_renewed.html) |
 | **About Us Renewed** | `201:96` | 1920 × 2442 | 반복 워터마크 배너, Contact, 본사 주소 및 Google 지도 위젯, 멤버 소개 링크 | [`about_us_renewed.html`](file:///home/limmireu1214/_projects/_EXPORT_HTML/None-Labs-site-Renewal/about_us_renewed.html) |
-| **Members Renewal** | `164:61` | 1920 × 2530 | 6인 핵심 멤버 프로필(임미르 대표 외), 커리어 타임라인, 트리 네비게이션 | [`about_us_members_renewed.html`](file:///home/limmireu1214/_projects/_EXPORT_HTML/None-Labs-site-Renewal/about_us_members_renewed.html) |
+| **Members Renewal** | `164:61` | 1920 × 2530 | 조직 구성원 안내(익명화/정제 완료), 커리어 타임라인, 트리 네비게이션 | [`about_us_members_renewed.html`](file:///home/limmireu1214/_projects/_EXPORT_HTML/None-Labs-site-Renewal/about_us_members_renewed.html) |
 | **Products Renewed** | `173:629` | 1920 × 1747 | 3대 주력 제품 라인업 쇼케이스 허브 카드 (Git Tester, None Calendar, Omni Flow) | [`products_renewed.html`](file:///home/limmireu1214/_projects/_EXPORT_HTML/None-Labs-site-Renewal/products_renewed.html) |
 | **Git Tester Renewed** | `164:87` | 1920 × 2612 | CI/CD 자동화 파이프라인 아키텍처 다이어그램(Build-Test-Deploy), 스크린샷 갤러리 | [`products_git_tester_renewed.html`](file:///home/limmireu1214/_projects/_EXPORT_HTML/None-Labs-site-Renewal/products_git_tester_renewed.html) |
 | **None Calendar Renewed** | `229:6` | 1920 × 2224 | Android TV 전용 심플 캘린더 소개, Google 계정 연동 플로우 및 UI 갤러리 | [`products_none_calendar_renewed.html`](file:///home/limmireu1214/_projects/_EXPORT_HTML/None-Labs-site-Renewal/products_none_calendar_renewed.html) |
