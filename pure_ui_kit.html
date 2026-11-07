@@ -12,7 +12,6 @@
   <style>
     * { box-sizing: border-box; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
     body { font-family: 'Pretendard', sans-serif; background-color: #F5F5F5; color: #343434; margin: 0; padding: 0; }
-    .code-box { background: #1E1E1E; color: #D4D4D4; font-family: monospace; font-size: 11px; border-radius: 6px; padding: 12px; overflow-x: auto; }
     .component-card { background: #FFFFFF; border: 1px solid #DEDEDE; border-radius: 12px; padding: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
   </style>
   <meta property="og:type" content="website" />
@@ -35,7 +34,6 @@
     <a href="ui_components.html" style="color:#121212;background:#56CFE1;padding:4px 10px;border-radius:4px;text-decoration:none;font-weight:600;">UI Kit</a>
     <a href="main_renewed.html" style="color:#CCCCCC;padding:4px 10px;border-radius:4px;text-decoration:none;">Main</a>
     <a href="about_us_renewed.html" style="color:#CCCCCC;padding:4px 10px;border-radius:4px;text-decoration:none;">About us</a>
-    <a href="about_us_members_renewed.html" style="color:#CCCCCC;padding:4px 10px;border-radius:4px;text-decoration:none;">Members</a>
     <a href="products_renewed.html" style="color:#CCCCCC;padding:4px 10px;border-radius:4px;text-decoration:none;">Products</a>
     <a href="products_git_tester_renewed.html" style="color:#CCCCCC;padding:4px 10px;border-radius:4px;text-decoration:none;">Git Tester</a>
     <a href="products_none_calendar_renewed.html" style="color:#CCCCCC;padding:4px 10px;border-radius:4px;text-decoration:none;">Calendar</a>
@@ -57,13 +55,13 @@
       <span class="text-[20px] text-[#686868] font-[500]" style="font-family:'Red Hat Display',sans-serif">Site Renewal UI Component Kit</span>
     </div>
     <p class="text-[15px] text-[#686868] leading-relaxed max-w-[960px]">
-      Figma 공식 리뉴얼 디자인(<code>8v1RPt6aeS1fQ5M0J3BW4x</code>)에서 순수 UI 컴포넌트만을 체계적으로 추출한 <strong>디자인 시스템 & UI 구성 페이지</strong>입니다.<br/>
-      어떠한 임의 추론이나 리디자인 없이(Zero Creative Liberty), 브랜드 로고, 네비게이션, 타이포그래피, 제품 카드, 팀원 프로필, 다이어그램, 갤러리 및 푸터까지 원본 Figma 좌표 및 Tailwind 스타일 규격을 1:1로 제공하여 React, Svelte, Vue 등의 컴포넌트로 즉각 이식할 수 있습니다.
+      Figma 공식 리뉴얼 디자인(<code>8v1RPt6aeS1fQ5M0J3BW4x</code>)에서 순수 UI 요소만을 추출한 <strong>디자인 시스템 & UI 구성 페이지</strong>입니다.<br/>
+      사용자 보안 및 개인정보 보호 요청에 따라 본사 상세 주소지, 이메일, 전화번호, 팀원 프로필을 안전하게 정제하였으며, 브랜드 로고, 네비게이션, 타이포그래피, 제품 카드, 다이어그램, 갤러리 및 푸터 규격을 1:1로 제공합니다.
     </p>
     <div class="flex flex-wrap gap-[10px] text-[12px] text-[#888888] pt-[8px]">
-      <span class="bg-[#E9E9E9] text-[#343434] px-[10px] py-[4px] rounded-[6px] font-[500]">474 Modular Blocks</span>
+      <span class="bg-[#E9E9E9] text-[#343434] px-[10px] py-[4px] rounded-[6px] font-[500]">Pure UI Elements</span>
+      <span class="bg-[#E9E9E9] text-[#343434] px-[10px] py-[4px] rounded-[6px] font-[500]">Privacy Sanitized</span>
       <span class="bg-[#E9E9E9] text-[#343434] px-[10px] py-[4px] rounded-[6px] font-[500]">128 Vector SVGs</span>
-      <span class="bg-[#E9E9E9] text-[#343434] px-[10px] py-[4px] rounded-[6px] font-[500]">9 Raster Images</span>
       <span class="bg-[#E9E9E9] text-[#343434] px-[10px] py-[4px] rounded-[6px] font-[500]">Figma 1:1 Deterministic Extract</span>
     </div>
   </header>
@@ -72,14 +70,12 @@
   <nav class="sticky top-[52px] z-40 bg-[#F5F5F5]/90 backdrop-blur py-[12px] border-b border-[#DEDEDE] flex flex-wrap gap-[8px] text-[13px]">
     <a href="#section-brand" class="bg-[#FFFFFF] hover:bg-[#E9E9E9] border border-[#DEDEDE] px-[12px] py-[6px] rounded-[20px] text-[#343434] font-[500] transition-colors">1. 브랜드 & 헤더</a>
     <a href="#section-typography" class="bg-[#FFFFFF] hover:bg-[#E9E9E9] border border-[#DEDEDE] px-[12px] py-[6px] rounded-[20px] text-[#343434] font-[500] transition-colors">2. 타이포그래피 & 슬로건</a>
-    <a href="#section-nav" class="bg-[#FFFFFF] hover:bg-[#E9E9E9] border border-[#DEDEDE] px-[12px] py-[6px] rounded-[20px] text-[#343434] font-[500] transition-colors">3. 네비게이션 & 트리</a>
+    <a href="#section-nav" class="bg-[#FFFFFF] hover:bg-[#E9E9E9] border border-[#DEDEDE] px-[12px] py-[6px] rounded-[20px] text-[#343434] font-[500] transition-colors">3. 네비게이션 & 브레드크럼</a>
     <a href="#section-products" class="bg-[#FFFFFF] hover:bg-[#E9E9E9] border border-[#DEDEDE] px-[12px] py-[6px] rounded-[20px] text-[#343434] font-[500] transition-colors">4. 제품 쇼케이스 카드</a>
-    <a href="#section-members" class="bg-[#FFFFFF] hover:bg-[#E9E9E9] border border-[#DEDEDE] px-[12px] py-[6px] rounded-[20px] text-[#343434] font-[500] transition-colors">5. 팀원 프로필 & 커리어</a>
-    <a href="#section-info" class="bg-[#FFFFFF] hover:bg-[#E9E9E9] border border-[#DEDEDE] px-[12px] py-[6px] rounded-[20px] text-[#343434] font-[500] transition-colors">6. 정보 & 지도 위젯</a>
-    <a href="#section-diagram" class="bg-[#FFFFFF] hover:bg-[#E9E9E9] border border-[#DEDEDE] px-[12px] py-[6px] rounded-[20px] text-[#343434] font-[500] transition-colors">7. 파이프라인 다이어그램</a>
-    <a href="#section-gallery" class="bg-[#FFFFFF] hover:bg-[#E9E9E9] border border-[#DEDEDE] px-[12px] py-[6px] rounded-[20px] text-[#343434] font-[500] transition-colors">8. 스크린샷 갤러리</a>
-    <a href="#section-footer" class="bg-[#FFFFFF] hover:bg-[#E9E9E9] border border-[#DEDEDE] px-[12px] py-[6px] rounded-[20px] text-[#343434] font-[500] transition-colors">9. 푸터 바</a>
-    <a href="#section-tokens" class="bg-[#FFFFFF] hover:bg-[#E9E9E9] border border-[#DEDEDE] px-[12px] py-[6px] rounded-[20px] text-[#343434] font-[500] transition-colors">10. 컬러 & 토큰 매트릭스</a>
+    <a href="#section-diagram" class="bg-[#FFFFFF] hover:bg-[#E9E9E9] border border-[#DEDEDE] px-[12px] py-[6px] rounded-[20px] text-[#343434] font-[500] transition-colors">5. 파이프라인 다이어그램</a>
+    <a href="#section-gallery" class="bg-[#FFFFFF] hover:bg-[#E9E9E9] border border-[#DEDEDE] px-[12px] py-[6px] rounded-[20px] text-[#343434] font-[500] transition-colors">6. 스크린샷 갤러리</a>
+    <a href="#section-footer" class="bg-[#FFFFFF] hover:bg-[#E9E9E9] border border-[#DEDEDE] px-[12px] py-[6px] rounded-[20px] text-[#343434] font-[500] transition-colors">7. 푸터 바</a>
+    <a href="#section-tokens" class="bg-[#FFFFFF] hover:bg-[#E9E9E9] border border-[#DEDEDE] px-[12px] py-[6px] rounded-[20px] text-[#343434] font-[500] transition-colors">8. 컬러 & 토큰 매트릭스</a>
   </nav>
 
   <!-- ========================================== -->
@@ -88,17 +84,16 @@
   <section id="section-brand" class="flex flex-col gap-[24px]">
     <div class="flex items-center justify-between border-b border-[#DEDEDE] pb-[12px]">
       <h2 class="text-[20px] font-[700] text-[#343434]">1. 브랜드 & 헤더 네비게이션 (Brand & Header Components)</h2>
-      <span class="text-[12px] text-[#888888]">Ubuntu, Red Hat Display, Pretendard</span>
+      <span class="text-[12px] text-[#888888]">Ubuntu, Red Hat Display</span>
     </div>
 
     <!-- 1.1 Desktop Header Bar -->
     <div class="component-card flex flex-col gap-[16px]">
       <div class="flex items-center justify-between text-[13px] text-[#686868]">
         <span class="font-[600] text-[#343434]">1.1 Desktop Navigation Header Bar (Figma Node: 184:13, 184:14, 184:15)</span>
-        <span>Standard Top Bar (Height: 80px)</span>
+        <span>Standard Top Bar (Height: 60px)</span>
       </div>
       <div class="p-[20px] bg-[#F5F5F5] border border-[#DEDEDE] rounded-[8px]">
-        <!-- Component -->
         <header class="w-full h-[60px] flex items-center justify-between px-[32px] bg-[#F5F5F5]">
           <div class="flex items-center gap-[40px]">
             <div class="text-[18px] leading-[20.68px] text-[#343434] select-none cursor-pointer" style="font-family:'Ubuntu',sans-serif">
@@ -120,7 +115,6 @@
         <span>Width: 420px (Compact Mobile)</span>
       </div>
       <div class="p-[20px] bg-[#E9E9E9] border border-[#DEDEDE] rounded-[8px] flex justify-center">
-        <!-- Component -->
         <header class="w-[420px] h-[60px] flex items-center justify-between px-[20px] bg-[#F5F5F5] rounded-[8px] shadow-sm">
           <div class="text-[16px] leading-[18px] text-[#343434] select-none" style="font-family:'Ubuntu',sans-serif">
             <span class="font-[700]">[</span><span class="font-[400]"> None Labs </span><span class="font-[700]">]</span>
@@ -135,7 +129,6 @@
 
     <!-- 1.3 Dual-Tone Code Tag Logo & Watermark -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-[24px]">
-      <!-- Code Tag Logo -->
       <div class="component-card flex flex-col gap-[16px]">
         <div class="flex items-center justify-between text-[13px] text-[#686868]">
           <span class="font-[600] text-[#343434]">1.3 Dual-Tone Code Logo &lt;/&gt; (Figma Node: 184:9)</span>
@@ -148,18 +141,15 @@
         </div>
       </div>
 
-      <!-- Watermark Repeating Banner Pattern -->
       <div class="component-card flex flex-col gap-[16px]">
         <div class="flex items-center justify-between text-[13px] text-[#686868]">
-          <span class="font-[600] text-[#343434]">1.4 Page Title Watermark Banner (Figma Node: 201:98 / Frame 37)</span>
+          <span class="font-[600] text-[#343434]">1.4 Page Title Watermark Banner (Figma Node: 201:98)</span>
           <span>Height: 140px Preview</span>
         </div>
         <div class="relative h-[140px] overflow-hidden bg-[#E9E9E9] rounded-[8px] border border-[#DEDEDE] flex items-center px-[32px]">
-          <!-- Repeating Pattern Background -->
           <div class="absolute inset-0 flex items-center select-none pointer-events-none opacity-40 overflow-hidden" style="font-family:'Ubuntu',sans-serif;font-size:90px;font-weight:700;color:#DEDEDE;white-space:nowrap;letter-spacing:4px;">
             &lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;
           </div>
-          <!-- Centered Title -->
           <h1 class="relative z-10 text-[36px] font-[400] text-[#343434]" style="font-family:'Red Hat Display',sans-serif">
             About us
           </h1>
@@ -178,7 +168,6 @@
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-[24px]">
-      <!-- Main Hero Heading -->
       <div class="component-card flex flex-col gap-[16px]">
         <div class="flex items-center justify-between text-[13px] text-[#686868]">
           <span class="font-[600] text-[#343434]">2.1 Hero Slogan (Figma Node: 184:8)</span>
@@ -191,7 +180,6 @@
         </div>
       </div>
 
-      <!-- Section Title & Description -->
       <div class="component-card flex flex-col gap-[16px]">
         <div class="flex items-center justify-between text-[13px] text-[#686868]">
           <span class="font-[600] text-[#343434]">2.2 Section Title & Description (Figma Node: 173:631)</span>
@@ -202,7 +190,7 @@
             None Labs offers various<br />solutions for everyday life
           </h2>
           <p class="text-[16px] text-[#686868] leading-relaxed" style="font-family:'Red Hat Display',sans-serif">
-            None Labs is a company based on Jeju Island, South Korea, founded by Mireu Lim in 2018.
+            None Labs is a software development and platform research company founded in 2018.
           </p>
         </div>
       </div>
@@ -218,7 +206,7 @@
       <span class="text-[12px] text-[#888888]">Sidebar Tree, Nested Accordion</span>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-[24px]">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-[24px]">
       <!-- Breadcrumb Bar -->
       <div class="component-card flex flex-col gap-[16px]">
         <div class="flex items-center justify-between text-[13px] text-[#686868]">
@@ -234,7 +222,7 @@
           <div class="flex items-center gap-[8px] text-[15px] font-[500]" style="font-family:'Red Hat Display',sans-serif">
             <span class="text-[#686868]">About us</span>
             <span class="text-[#888888]">&gt;</span>
-            <span class="text-[#343434] font-[600]">Members</span>
+            <span class="text-[#343434] font-[600]">Company Overview</span>
           </div>
         </div>
       </div>
@@ -253,45 +241,15 @@
                 <span>v</span> <span>Git tester</span>
               </div>
               <div class="flex flex-col gap-[4px] pl-[18px] text-[13px] text-[#686868]">
-                <a href="#intro" class="hover:text-[#343434] font-[500] text-[#343434]">Introduction</a>
-                <a href="#how" class="hover:text-[#343434]">How it works</a>
-                <a href="#gallery" class="hover:text-[#343434]">Gallery</a>
+                <a href="products_git_tester_renewed.html#intro" class="hover:text-[#343434] font-[500] text-[#343434]">Introduction</a>
+                <a href="products_git_tester_renewed.html#how" class="hover:text-[#343434]">How it works</a>
+                <a href="products_git_tester_renewed.html#gallery" class="hover:text-[#343434]">Gallery</a>
               </div>
               <div class="flex items-center gap-[6px] text-[#686868] hover:text-[#343434] cursor-pointer">
                 <span>&gt;</span> <span>None calendar</span>
               </div>
               <div class="flex items-center gap-[6px] text-[#686868] hover:text-[#343434] cursor-pointer">
                 <span>&gt;</span> <span>Omni flow</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Members Sidebar Navigation Tree -->
-      <div class="component-card flex flex-col gap-[16px]">
-        <div class="flex items-center justify-between text-[13px] text-[#686868]">
-          <span class="font-[600] text-[#343434]">3.3 Members Sidebar Tree (164:237)</span>
-          <span>Nested Team Tree</span>
-        </div>
-        <div class="p-[20px] bg-[#FFFFFF] border border-[#DEDEDE] rounded-[8px]">
-          <div class="flex flex-col gap-[6px] text-[14px]" style="font-family:'Red Hat Display',sans-serif">
-            <span class="font-[600] text-[#343434]">About us</span>
-            <div class="flex flex-col gap-[4px] pl-[8px] border-l-2 border-[#DEDEDE] ml-[4px]">
-              <span class="text-[#343434] font-[500]">Members</span>
-              <div class="pl-[10px] flex flex-col gap-[4px] text-[13px]">
-                <div class="text-[#343434] font-[600] flex items-center gap-[4px]">
-                  <span>v</span> <span>Mireu Lim</span>
-                </div>
-                <div class="pl-[14px] text-[12px] text-[#686868] flex flex-col gap-[2px]">
-                  <span class="text-[#343434] font-[500]">• Career</span>
-                  <span>• Others</span>
-                </div>
-                <div class="text-[#686868] flex items-center gap-[4px]">&gt; Subin Kim</div>
-                <div class="text-[#686868] flex items-center gap-[4px]">&gt; Gibin Eom</div>
-                <div class="text-[#686868] flex items-center gap-[4px]">&gt; Seongbin Son</div>
-                <div class="text-[#686868] flex items-center gap-[4px]">&gt; Sangho Hwang</div>
-                <div class="text-[#686868] flex items-center gap-[4px]">&gt; Yerin Lee</div>
               </div>
             </div>
           </div>
@@ -310,7 +268,6 @@
     </div>
 
     <div class="flex flex-col gap-[16px]">
-      <!-- Product Card 1: Git tester -->
       <a href="products_git_tester_renewed.html" class="component-card flex items-center justify-between p-[28px] hover:border-[#888888] transition-all group cursor-pointer block text-decoration-none">
         <div class="flex flex-col gap-[6px]">
           <div class="flex items-center gap-[12px]">
@@ -324,7 +281,6 @@
         <span class="text-[13px] text-[#888888] group-hover:text-[#343434] transition-colors">자세히 보기 →</span>
       </a>
 
-      <!-- Product Card 2: None calendar -->
       <a href="products_none_calendar_renewed.html" class="component-card flex items-center justify-between p-[28px] hover:border-[#888888] transition-all group cursor-pointer block text-decoration-none">
         <div class="flex flex-col gap-[6px]">
           <div class="flex items-center gap-[12px]">
@@ -338,7 +294,6 @@
         <span class="text-[13px] text-[#888888] group-hover:text-[#343434] transition-colors">자세히 보기 →</span>
       </a>
 
-      <!-- Product Card 3: Omni flow -->
       <a href="products_omni_flow_renewed.html" class="component-card flex items-center justify-between p-[28px] hover:border-[#888888] transition-all group cursor-pointer block text-decoration-none">
         <div class="flex flex-col gap-[6px]">
           <div class="flex items-center gap-[12px]">
@@ -355,144 +310,11 @@
   </section>
 
   <!-- ========================================== -->
-  <!-- 5. MEMBER PROFILE & TEAM CARDS             -->
-  <!-- ========================================== -->
-  <section id="section-members" class="flex flex-col gap-[24px]">
-    <div class="flex items-center justify-between border-b border-[#DEDEDE] pb-[12px]">
-      <h2 class="text-[20px] font-[700] text-[#343434]">5. 팀원 프로필 & 커리어 리스트 (Member Profile & Team Cards)</h2>
-      <span class="text-[12px] text-[#888888]">Accordion Profile Item & Collapsed Team Rows</span>
-    </div>
-
-    <!-- Active Profile: Mireu Lim -->
-    <div class="component-card flex flex-col gap-[24px]">
-      <div class="flex items-start justify-between border-b border-[#DEDEDE] pb-[16px]">
-        <div class="flex flex-col gap-[4px]">
-          <div class="flex items-center gap-[8px]">
-            <span class="text-[20px] text-[#343434] font-[600]">v</span>
-            <h3 class="text-[24px] font-[600] text-[#343434]" style="font-family:'Red Hat Display',sans-serif">Mireu Lim</h3>
-          </div>
-          <p class="text-[15px] text-[#686868] pl-[20px]" style="font-family:'Red Hat Display',sans-serif">
-            General manager, Back-end developer
-          </p>
-        </div>
-        <span class="bg-[#E9E9E9] text-[#343434] text-[12px] px-[10px] py-[4px] rounded-[4px] font-[600]">Representative</span>
-      </div>
-
-      <!-- Career History -->
-      <div class="flex flex-col gap-[12px] pl-[20px]">
-        <h4 class="text-[18px] font-[600] text-[#343434]" style="font-family:'Red Hat Display',sans-serif">Career</h4>
-        <ul class="flex flex-col gap-[8px] text-[15px] text-[#343434] leading-relaxed" style="font-family:'Pretendard',sans-serif">
-          <li class="flex items-start gap-[8px]">
-            <span class="text-[#888888]">•</span>
-            <span>CNN 분류 프로그램을 이용한 쓰레기 분류 장치에 대한 연구 (한국정보과학회)</span>
-          </li>
-          <li class="flex items-start gap-[8px]">
-            <span class="text-[#888888]">•</span>
-            <span>대구가톨릭대학교 학부연구생</span>
-          </li>
-        </ul>
-      </div>
-
-      <!-- External Links -->
-      <div class="flex flex-col gap-[8px] pl-[20px] pt-[8px]">
-        <h4 class="text-[18px] font-[600] text-[#343434]" style="font-family:'Red Hat Display',sans-serif">Others</h4>
-        <a href="https://www.mireulim.xyz" target="_blank" class="text-[14px] text-[#686868] hover:text-[#343434] flex items-center gap-[6px] underline">
-          <span>🔗</span> www.mireulim.xyz
-        </a>
-      </div>
-    </div>
-
-    <!-- Collapsed Team Rows -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-[16px]">
-      <div class="component-card flex items-center justify-between p-[18px]">
-        <div class="flex items-center gap-[10px]">
-          <span class="text-[#888888] font-[600]">&gt;</span>
-          <span class="text-[18px] font-[500] text-[#343434]" style="font-family:'Red Hat Display',sans-serif">Subin Kim</span>
-        </div>
-        <span class="text-[14px] text-[#686868]">Back-end developer</span>
-      </div>
-      <div class="component-card flex items-center justify-between p-[18px]">
-        <div class="flex items-center gap-[10px]">
-          <span class="text-[#888888] font-[600]">&gt;</span>
-          <span class="text-[18px] font-[500] text-[#343434]" style="font-family:'Red Hat Display',sans-serif">Gibin Eom</span>
-        </div>
-        <span class="text-[14px] text-[#686868]">UI/UX designer</span>
-      </div>
-      <div class="component-card flex items-center justify-between p-[18px]">
-        <div class="flex items-center gap-[10px]">
-          <span class="text-[#888888] font-[600]">&gt;</span>
-          <span class="text-[18px] font-[500] text-[#343434]" style="font-family:'Red Hat Display',sans-serif">Seongbin Son</span>
-        </div>
-        <span class="text-[14px] text-[#686868]">Back-end developer</span>
-      </div>
-      <div class="component-card flex items-center justify-between p-[18px]">
-        <div class="flex items-center gap-[10px]">
-          <span class="text-[#888888] font-[600]">&gt;</span>
-          <span class="text-[18px] font-[500] text-[#343434]" style="font-family:'Red Hat Display',sans-serif">Sangho Hwang</span>
-        </div>
-        <span class="text-[14px] text-[#686868]">Product manager, Front-end, UI/UX</span>
-      </div>
-      <div class="component-card flex items-center justify-between p-[18px] md:col-span-2">
-        <div class="flex items-center gap-[10px]">
-          <span class="text-[#888888] font-[600]">&gt;</span>
-          <span class="text-[18px] font-[500] text-[#343434]" style="font-family:'Red Hat Display',sans-serif">Yerin Lee</span>
-        </div>
-        <span class="text-[14px] text-[#686868]">Product manager, UI/UX designer</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========================================== -->
-  <!-- 6. INFO & LOCATION WIDGETS                 -->
-  <!-- ========================================== -->
-  <section id="section-info" class="flex flex-col gap-[24px]">
-    <div class="flex items-center justify-between border-b border-[#DEDEDE] pb-[12px]">
-      <h2 class="text-[20px] font-[700] text-[#343434]">6. 정보 & 주소 지도 위젯 (Info & Location Widgets)</h2>
-      <span class="text-[12px] text-[#888888]">Contact Block, Map Card (Figma Node: 201:108)</span>
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-[24px]">
-      <!-- Contact Card -->
-      <div class="component-card flex flex-col gap-[16px]">
-        <h3 class="text-[20px] font-[600] text-[#343434]" style="font-family:'Red Hat Display',sans-serif">Contact</h3>
-        <ul class="flex flex-col gap-[8px] text-[15px] text-[#686868]" style="font-family:'Red Hat Display',sans-serif">
-          <li class="flex items-center gap-[8px]">
-            <span>•</span>
-            <a href="mailto:email.example@nonelab.com" class="hover:text-[#343434] underline">email.example@nonelab.com</a>
-          </li>
-          <li class="flex items-center gap-[8px]">
-            <span>•</span>
-            <span>064-000-0000</span>
-          </li>
-        </ul>
-
-        <div class="pt-[16px] border-t border-[#DEDEDE]">
-          <h3 class="text-[20px] font-[600] text-[#343434] mb-[8px]" style="font-family:'Red Hat Display',sans-serif">Address</h3>
-          <p class="text-[15px] text-[#343434] leading-relaxed" style="font-family:'Pretendard',sans-serif">
-            제주특별자치도 제주시 설촌로8길 34, 401호(삼양이동, Yg엘리시움)
-          </p>
-        </div>
-      </div>
-
-      <!-- Map Display Widget -->
-      <div class="component-card flex flex-col gap-[16px]">
-        <div class="flex items-center justify-between text-[13px] text-[#686868]">
-          <span class="font-[600] text-[#343434]">Interactive Location Map Preview</span>
-          <span>Google Map Widget</span>
-        </div>
-        <div class="w-full h-[240px] rounded-[10px] overflow-hidden border border-[#DEDEDE] shadow-sm">
-          <img src="assets/img_1dda54b3f6bc6a18bcacd13b193cad80da3a2396.png" alt="Google Map Location" class="w-full h-full object-cover select-none pointer-events-none" />
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========================================== -->
-  <!-- 7. PIPELINE DIAGRAM COMPONENT              -->
+  <!-- 5. PIPELINE DIAGRAM COMPONENT              -->
   <!-- ========================================== -->
   <section id="section-diagram" class="flex flex-col gap-[24px]">
     <div class="flex items-center justify-between border-b border-[#DEDEDE] pb-[12px]">
-      <h2 class="text-[20px] font-[700] text-[#343434]">7. CI/CD 파이프라인 아키텍처 다이어그램 (Pipeline Diagram)</h2>
+      <h2 class="text-[20px] font-[700] text-[#343434]">5. CI/CD 파이프라인 아키텍처 다이어그램 (Pipeline Diagram)</h2>
       <span class="text-[12px] text-[#888888]">Figma Node: 164:106 / How It Works</span>
     </div>
 
@@ -504,13 +326,10 @@
         </p>
       </div>
 
-      <!-- Diagram Card -->
       <div class="w-full p-[40px] bg-[#FFFFFF] border border-[#DEDEDE] rounded-[12px] flex items-center justify-center">
         <div class="w-full max-w-[680px] flex items-center justify-between relative">
-          <!-- Flow Line -->
           <div class="absolute left-[30px] right-[30px] top-[24px] h-[2px] bg-[#343434] z-0"></div>
           
-          <!-- Step 1: Build -->
           <div class="flex flex-col items-center gap-[8px] relative z-10">
             <div class="w-[48px] h-[48px] rounded-full bg-[#FFFFFF] border-2 border-[#343434] flex items-center justify-center font-[700] text-[18px] text-[#343434]">
               ✕
@@ -518,7 +337,6 @@
             <span class="text-[15px] font-[500] text-[#343434]" style="font-family:'Red Hat Display',sans-serif">Build</span>
           </div>
 
-          <!-- Step 2: Test -->
           <div class="flex flex-col items-center gap-[8px] relative z-10">
             <div class="w-[48px] h-[48px] rounded-full bg-[#FFFFFF] border-2 border-[#343434] flex items-center justify-center font-[700] text-[18px] text-[#343434]">
               ○
@@ -526,7 +344,6 @@
             <span class="text-[15px] font-[500] text-[#343434]" style="font-family:'Red Hat Display',sans-serif">Test</span>
           </div>
 
-          <!-- Step 3: Deploy -->
           <div class="flex flex-col items-center gap-[8px] relative z-10">
             <div class="w-[48px] h-[48px] rounded-full bg-[#343434] flex items-center justify-center font-[700] text-[18px] text-[#FFFFFF]">
               ●
@@ -534,7 +351,6 @@
             <span class="text-[15px] font-[500] text-[#343434]" style="font-family:'Red Hat Display',sans-serif">Deploy</span>
           </div>
 
-          <!-- Step 4: Document (Branching) -->
           <div class="flex flex-col items-center gap-[8px] relative z-10">
             <div class="w-[48px] h-[48px] rounded-full bg-[#FFFFFF] border-2 border-dashed border-[#888888] flex items-center justify-center font-[700] text-[18px] text-[#888888]">
               ○
@@ -548,16 +364,15 @@
   </section>
 
   <!-- ========================================== -->
-  <!-- 8. SCREENSHOT GALLERY CARDS                -->
+  <!-- 6. SCREENSHOT GALLERY CARDS                -->
   <!-- ========================================== -->
   <section id="section-gallery" class="flex flex-col gap-[24px]">
     <div class="flex items-center justify-between border-b border-[#DEDEDE] pb-[12px]">
-      <h2 class="text-[20px] font-[700] text-[#343434]">8. 스크린샷 갤러리 카드 (Screenshot Gallery Cards)</h2>
+      <h2 class="text-[20px] font-[700] text-[#343434]">6. 스크린샷 갤러리 카드 (Screenshot Gallery Cards)</h2>
       <span class="text-[12px] text-[#888888]">Rounded 12px with Border Shadow (Figma 164:110 / 229:26)</span>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-[24px]">
-      <!-- Card 1 -->
       <div class="component-card flex flex-col gap-[12px]">
         <div class="w-full h-[280px] rounded-[12px] overflow-hidden border border-[#DEDEDE] shadow-sm bg-[#222]">
           <img src="assets/img_eb6cf660036a7800aee013b353263d0c877778f3.png" alt="Main Screen Preview" class="w-full h-full object-cover select-none pointer-events-none" />
@@ -565,7 +380,6 @@
         <span class="text-[14px] text-[#686868] font-[500]" style="font-family:'Red Hat Display',sans-serif">Main screen</span>
       </div>
 
-      <!-- Card 2 -->
       <div class="component-card flex flex-col gap-[12px]">
         <div class="w-full h-[280px] rounded-[12px] overflow-hidden border border-[#DEDEDE] shadow-sm bg-[#222]">
           <img src="assets/img_35aa8e89d97d211ac78efc79f3f27472094cedd5.png" alt="AI Generated API Document" class="w-full h-full object-cover select-none pointer-events-none" />
@@ -576,28 +390,24 @@
   </section>
 
   <!-- ========================================== -->
-  <!-- 9. FOOTER BARS                             -->
+  <!-- 7. FOOTER BARS                             -->
   <!-- ========================================== -->
   <section id="section-footer" class="flex flex-col gap-[24px]">
     <div class="flex items-center justify-between border-b border-[#DEDEDE] pb-[12px]">
-      <h2 class="text-[20px] font-[700] text-[#343434]">9. 푸터 컴포넌트 (Footer Bar Components)</h2>
-      <span class="text-[12px] text-[#888888]">Figma Node: 184:21 / 184:22 / 184:23</span>
+      <h2 class="text-[20px] font-[700] text-[#343434]">7. 푸터 컴포넌트 (Footer Bar Components)</h2>
+      <span class="text-[12px] text-[#888888]">Figma Node: 184:21 / 184:22 (Sanitized)</span>
     </div>
 
-    <!-- Desktop Footer Preview -->
     <div class="component-card flex flex-col gap-[16px]">
       <div class="flex items-center justify-between text-[13px] text-[#686868]">
-        <span class="font-[600] text-[#343434]">9.1 Desktop Global Footer Bar</span>
-        <span>Background: #E9E9E9 (Figma Standard)</span>
+        <span class="font-[600] text-[#343434]">7.1 Desktop Global Footer Bar</span>
+        <span>Background: #E9E9E9 (Sanitized Clean Footer)</span>
       </div>
       <footer class="w-full bg-[#E9E9E9] p-[32px] rounded-[8px] flex flex-col gap-[14px] border border-[#DEDEDE]">
         <div class="text-[20px] font-[700] leading-none text-[#343434] select-none" style="font-family:'Ubuntu',sans-serif">
           <span>[</span><span class="font-[400]"> None Labs </span><span>]</span>
         </div>
         <p class="text-[14px] leading-relaxed text-[#343434]" style="font-family:'Pretendard',sans-serif">
-          제주특별자치도 제주시 설촌로8길 34, 401호(삼양이동, Yg엘리시움) 대표: 임미르<br />
-          사업자등록번호: 693-17-01866<br />
-          이메일: limmireu@naver.com<br />
           © 2023. None Labs. All rights reserved.
         </p>
       </footer>
@@ -605,15 +415,14 @@
   </section>
 
   <!-- ========================================== -->
-  <!-- 10. COLOR & TOKENS MATRIX                  -->
+  <!-- 8. COLOR & TOKENS MATRIX                  -->
   <!-- ========================================== -->
   <section id="section-tokens" class="flex flex-col gap-[24px]">
     <div class="flex items-center justify-between border-b border-[#DEDEDE] pb-[12px]">
-      <h2 class="text-[20px] font-[700] text-[#343434]">10. 디자인 토큰 & 컬러 팔레트 매트릭스 (Design Tokens)</h2>
+      <h2 class="text-[20px] font-[700] text-[#343434]">8. 디자인 토큰 & 컬러 팔레트 매트릭스 (Design Tokens)</h2>
       <span class="text-[12px] text-[#888888]">tokens.json 1:1 Matched</span>
     </div>
 
-    <!-- Color Swatches -->
     <div class="grid grid-cols-2 md:grid-cols-4 gap-[16px]">
       <div class="component-card flex flex-col gap-[8px]">
         <div class="w-full h-[60px] rounded-[6px] bg-[#343434]"></div>
